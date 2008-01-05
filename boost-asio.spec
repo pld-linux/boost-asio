@@ -1,4 +1,5 @@
 Summary:	Boost ASIO - a cross-platform C++ library for network programming
+Summary(pl.UTF-8):	Boost ASIO - wieloplatformowa biblioteka C++ do programowania sieciowego
 Name:		boost-asio
 Version:	0.3.7
 Release:	1
@@ -19,11 +20,17 @@ asio is a cross-platform C++ library for network programming that
 provides developers with a consistent asynchronous I/O model using a
 modern C++ approach.
 
+%description -l pl.UTF-8
+asio to wieloplatformowa biblioteka C++ do programowania sieciowego
+udostępniająca spójny, asynchroniczny model wejścia/wyjścia z
+nowoczesnym podejściem C++.
+
 %prep
 %setup -q -n asio-%{version}
 
-%build
 cp -a src src-example
+
+%build
 %configure
 %{__make}
 
