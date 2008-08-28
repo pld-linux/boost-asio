@@ -1,12 +1,12 @@
 Summary:	Boost ASIO - a cross-platform C++ library for network programming
 Summary(pl.UTF-8):	Boost ASIO - wieloplatformowa biblioteka C++ do programowania sieciowego
 Name:		boost-asio
-Version:	0.3.7
+Version:	1.2.0
 Release:	1
 License:	Boost Software License
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/asio/asio-%{version}.tar.bz2
-# Source0-md5:	5481c9764ece613d8e099c1a9b32ded2
+# Source0-md5:	9dbd5e04e015d02f5b072be5028c91b8
 URL:		http://asio.sourceforge.net/
 BuildRequires:	boost-devel
 BuildRequires:	doxygen
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING LICENSE* THANKS TODO doc/*
+%doc COPYING LICENSE* doc/*
 %doc src-example/examples
 %{_includedir}/asio
 %{_includedir}/*.hpp
